@@ -100,7 +100,7 @@ $(function() {
 			},
 		};
 	
-		navigator.mediaDevices.getUserMedia(constraints
+		navigator.mediaDevices.getUserMedia(constraints)
 			.then(stream => {
 				$('#my-video').get(0).srcObject = stream;
 				localStream = stream;
@@ -113,7 +113,6 @@ $(function() {
 				$('#step1-error').show();
 				console.error(err);
 			});
-	)
 
 	function step2() {
 		$('#step1, #step3').hide();
