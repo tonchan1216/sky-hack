@@ -113,6 +113,7 @@ $(function() {
 				$('#step1-error').show();
 				console.error(err);
 			});
+	}
 
 	function step2() {
 		$('#step1, #step3').hide();
